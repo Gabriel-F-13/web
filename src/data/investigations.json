@@ -1,0 +1,217 @@
+[
+  {
+    "id": "PSI-25",
+    "acronym": "BASS-II",
+    "title": "Burning and Suppression of Solids - II",
+    "doi": "10.60555/4qc4-de67",
+    "pillar": [
+      "Prevention",
+      "Suppression"
+    ],
+    "fuel_phase": "Solid",
+    "hardware": "MSG (Microgravity Science Glovebox) + SPICE flow duct",
+    "sensors": [
+      "HD Color & IR Video",
+      "Radiometer",
+      "O2 / CO2 / CO Gas Analyzers (CSA-CP, CDM)"
+    ],
+    "variables_changed": [
+      "Airflow speed (Fan/Restrictor)",
+      "Sample thickness & material (PMMA, Sibal, Nomex)",
+      "O2 concentration (N2 dilution)"
+    ],
+    "variables_constant": [
+      "Microgravity (0g ISS)",
+      "76x76 mm duct geometry"
+    ],
+    "objectives": "Evaluate solid material flammability limits, CO/CO2 toxic emissions, and extinction in low-speed microgravity flows.",
+    "technical_insight": "Forced ventilation in 0g sustains flames on solid fabrics/plastics and elevates CO generation; tests challenge static 1g NASA-STD-6001 assumptions.",
+    "student_summary": "No espaço o ar quente não sobe, mas se o ventilador da cabine ligar, um pedaço de tecido ou plástico pode queimar rápido e soltar gás tóxico (CO).",
+    "lunar_partial_g_note": "Sem dados diretos em 1/6g (Lua) e O2 testado <= 22.5%. Combinar com testes em 1g para delimitar (bound) o risco lunar até a chegada dos experimentos LUCI/FM2.",
+    "earth_spinoff": "Aprimora normas de tecidos antichama para bombeiros e modelos de incêndio em túneis e prédios.",
+    "stats": {
+      "total_runs": 129,
+      "unique_fuels": 51,
+      "o2_min_pct": 13.6,
+      "o2_max_pct": 22.2,
+      "pressure_psi_min": 14.7,
+      "pressure_psi_max": 14.7,
+      "airflow_cm_s_min": null,
+      "airflow_cm_s_max": null,
+      "covers_lunar_zone": false,
+      "covers_high_o2": false
+    }
+  },
+  {
+    "id": "PSI-99",
+    "acronym": "SAFFIRE-II",
+    "title": "Spacecraft Fire Experiment - II",
+    "doi": "10.60555/2chp-m469",
+    "pillar": [
+      "Prevention"
+    ],
+    "fuel_phase": "Solid",
+    "hardware": "Cygnus Cargo Spacecraft Flow Duct (Vehicle-Scale)",
+    "sensors": [
+      "2 Video Cameras",
+      "Thermocouples (Flow/Flame/Plume)",
+      "2 Radiometers",
+      "O2, CO2, Pressure & Anemometers"
+    ],
+    "variables_changed": [
+      "Sample material & thickness (Silicone, Sibal, PMMA, Nomex)",
+      "Flow direction (Concurrent vs. Opposed)",
+      "Airflow speed (20 vs. 30 cm/s)"
+    ],
+    "variables_constant": [
+      "Sample size (29 cm x 5 cm)",
+      "Ignition power (80 W for 9.2 s)",
+      "Cygnus cabin pressure (~14.7 psi)"
+    ],
+    "objectives": "Measure realistic large-scale flame spread in a habitable spacecraft and directly compare 0g burn lengths against 1g Earth tests.",
+    "technical_insight": "Includes direct 0g vs. 1g burn comparison on identical samples (e.g., thin silicone burned ~0 in 0g vs. acceleratory complete burn in 1g).",
+    "student_summary": "A NASA ateou fogo controlado dentro de uma nave cargueira vazia antes de ela reentrar na atmosfera para ver como um incêndio cresce em tamanho real — e comparou direto com a Terra.",
+    "lunar_partial_g_note": "Única base do conjunto com colunas paralelas de 0g e 1g no mesmo material — excelente âncora empírica para estimar gravidade intermediária (Lua/Marte).",
+    "earth_spinoff": "Valida modelos computacionais (CFD) usados em segurança de aeronaves e edifícios.",
+    "stats": {
+      "total_runs": 15,
+      "unique_fuels": 12,
+      "o2_min_pct": 21.5,
+      "o2_max_pct": 22.1,
+      "pressure_psi_min": 14.7,
+      "pressure_psi_max": 14.7,
+      "airflow_cm_s_min": 20.0,
+      "airflow_cm_s_max": 20.0,
+      "covers_lunar_zone": false,
+      "covers_high_o2": false
+    }
+  },
+  {
+    "id": "PSI-101",
+    "acronym": "SAME-R",
+    "title": "Smoke Aerosol Measurement Experiment - Reflight",
+    "doi": "10.60555/2np7-jv14",
+    "pillar": [
+      "Detection"
+    ],
+    "fuel_phase": "Aerosol/Smoke",
+    "hardware": "ISS Express Rack / M-pass Aerosol Instrument + DustTrak + Ionization Detector",
+    "sensors": [
+      "M-pass (Moment/Particle Size)",
+      "DustTrak Optical Counter",
+      "Ionization Smoke Detector",
+      "Thermal Precipitators"
+    ],
+    "variables_changed": [
+      "Fuel pyrolysis source (Kapton, Teflon, Pyrell foam, Silicone)",
+      "Primary aging & mixing times",
+      "Inlet airflow velocity"
+    ],
+    "variables_constant": [
+      "Microgravity (0g)",
+      "Controlled smoke aging chamber"
+    ],
+    "objectives": "Characterize how smoke particle size distribution ages and coagulates in 0g to prevent missed detections and false alarms.",
+    "technical_insight": "Without buoyancy, smoke particles stay suspended and age longer, shifting optimal optical vs. ionization detector response (Rt/R0).",
+    "student_summary": "Na microgravidade a fumaça não sobe até o teto e as partículas grudam entre si de um jeito diferente. Esse estudo ensinou a calibrar alarmes que não dão alarme falso nem falham.",
+    "lunar_partial_g_note": "Combinado aos estudos irmãos DAFT/DAFT-2 (que usaram hardware similar para poeira), ajuda a separar fumaça real de poeira lunar abrasiva nos futuros habitats.",
+    "earth_spinoff": "Base direta dos detectores industriais que distinguem poeira de fumaça (ex.: mineração e fábricas) reduzindo alarmes falsos.",
+    "stats": {
+      "total_runs": 109,
+      "unique_fuels": 5,
+      "o2_min_pct": 21.0,
+      "o2_max_pct": 21.0,
+      "pressure_psi_min": 14.7,
+      "pressure_psi_max": 14.7,
+      "airflow_cm_s_min": 0.0,
+      "airflow_cm_s_max": 8.1,
+      "covers_lunar_zone": false,
+      "covers_high_o2": false
+    }
+  },
+  {
+    "id": "PSI-68",
+    "acronym": "FLEX-2",
+    "title": "Flame Extinguishment Experiment - 2",
+    "doi": "10.60555/byp8-h018",
+    "pillar": [
+      "Suppression"
+    ],
+    "fuel_phase": "Liquid",
+    "hardware": "CIR (Combustion Integrated Rack) / MDCA (Multi-user Droplet Combustion Apparatus)",
+    "sensors": [
+      "High-Speed Color & UV/IR Cameras",
+      "Radiometers",
+      "Chamber Pressure & Gas Analyzers"
+    ],
+    "variables_changed": [
+      "Oxygen mole fraction (17% to 30%+)",
+      "Ambient pressure (0.5 to 3.0 atm / 7.35 to 44.1 psi)",
+      "Diluent gas (N2 vs. He) & Droplet fuels/mixtures"
+    ],
+    "variables_constant": [
+      "Initial droplet diameter (1.5–5 mm)",
+      "Ambient temperature (~25 °C)"
+    ],
+    "objectives": "Determine burning rates, radiative extinction, cool flames, and suppression limits of liquid droplets across wide pressures and high O2.",
+    "technical_insight": "Covers reduced-pressure (7.35 psi) and elevated-O2 (30%) regimes overlapping Lunar Base / Rover atmospheres, revealing invisible low-temperature 'cool flames'.",
+    "student_summary": "Gotas de combustível no espaço viram bolinhas perfeitas e podem continuar queimando com 'chamas frias' invisíveis a olho nu, mesmo depois que o fogo parece ter apagado!",
+    "lunar_partial_g_note": "Única base líquida do conjunto que penetra diretamente na zona de baixa pressão (7.35 psi) e 30% O2 esperada em rovers e bases lunares.",
+    "earth_spinoff": "Ajuda a criar motores mais limpos e eficientes e inspira supressores espaciais de névoa fina (fine-water-mist) usados hoje na Terra.",
+    "stats": {
+      "total_runs": 160,
+      "unique_fuels": 8,
+      "o2_min_pct": 17.0,
+      "o2_max_pct": 30.0,
+      "pressure_psi_min": 7.3,
+      "pressure_psi_max": 44.1,
+      "airflow_cm_s_min": 2.5,
+      "airflow_cm_s_max": 2.5,
+      "covers_lunar_zone": true,
+      "covers_high_o2": true
+    }
+  },
+  {
+    "id": "PSI-159",
+    "acronym": "ACME CFI-G",
+    "title": "Cool Flames Investigation with Gases",
+    "doi": "10.60555/cyt1-kh64",
+    "pillar": [
+      "Prevention"
+    ],
+    "fuel_phase": "Gas",
+    "hardware": "CIR (Combustion Integrated Rack) / ACME Spherical Porous Burner",
+    "sensors": [
+      "Color & UV Cameras",
+      "Radiometers",
+      "Photomultiplier Tubes (PMT)",
+      "Thermocouples"
+    ],
+    "variables_changed": [
+      "High Oxygen fraction (XO2 up to ~85%)",
+      "Normal vs. Inverse flame configuration",
+      "Pressure (bar) & Gas fuel (ethane, propane, butane)"
+    ],
+    "variables_constant": [
+      "Spherical porous burner geometry",
+      "Microgravity (0g CIR)"
+    ],
+    "objectives": "Investigate ignition, extinction, and cool-flame regimes of gaseous fuels under extreme oxygen enrichment (up to 85% O2).",
+    "technical_insight": "Provides the largest dataset (1,194 runs) reaching extreme O2 concentrations (30%–85%), critical for bounding hyper-oxidizing spacecraft/spacesuit leaks.",
+    "student_summary": "Para saber o que acontece se vazar oxigênio puro (como nos trajes espaciais de 100% O₂), a NASA testou gases com até 85% de oxigênio, descobrindo chamas 'de dentro para fora' e chamas frias.",
+    "lunar_partial_g_note": "Cobre com folga a faixa >=30% O2 da Base Lunar em combustíveis gasosos; conecta com o irmão ACME E-FIELD Flames (que simulou gravidade parcial com campo elétrico).",
+    "earth_spinoff": "Melhora modelos químicos de combustão usados para reduzir fuligem e emissões em turbinas e motores terrestres.",
+    "stats": {
+      "total_runs": 333,
+      "unique_fuels": 9,
+      "o2_min_pct": 12.0,
+      "o2_max_pct": 85.0,
+      "pressure_psi_min": 7.2,
+      "pressure_psi_max": 48.0,
+      "airflow_cm_s_min": null,
+      "airflow_cm_s_max": null,
+      "covers_lunar_zone": true,
+      "covers_high_o2": true
+    }
+  }
+]
